@@ -1,0 +1,17 @@
+server:
+  port: 8000    #default port where the service will be started
+spring:
+  application:
+    name: zuul   #current service name to be used by the eureka server
+eureka:         #tells about the Eureka server details and its refresh time
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8090/eureka/
+zuul:
+  routes:
+    songs:
+      path: /songs/**
+      serviceId: songs
+    details:
+      path: /details/**
+      serviceId: details
