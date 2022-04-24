@@ -269,3 +269,5 @@ Ajouter cette dépendance dans le fichier **songs/pom.xml**
     <artifactId>spring-cloud-starter-openfeign</artifactId>
 </dependency>
 ```
+
+**to be continued ...**
